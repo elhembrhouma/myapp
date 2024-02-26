@@ -1,0 +1,7 @@
+version: '3'
+services:
+  flask:
+    build: .
+    ports:
+      - "5001:5000"  # Port mapping: port sur le conteneur -> port sur la machine hôte
+    restart: always
